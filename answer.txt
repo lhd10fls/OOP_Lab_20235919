@@ -1,0 +1,9 @@
+1.
+When the user selects "Cancel," the variable option is assigned the value JOptionPane.CANCEL_OPTION.
+The program only checks whether the user selects "Yes"; all other cases are treated as "No" by default.
+Therefore, selecting "Cancel" is no different from selecting "No."
+
+
+2.
+Switch to using showConfirmDialog to force the user to choose only "Yes" or "No":
+int option = JOptionPane.showConfirmDialog(null, "Yes", "No", JOptionPane.YES_NO_OPTION);
